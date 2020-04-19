@@ -1,0 +1,269 @@
+/** Base reset **/
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+*,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+html{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+/* End Base Reset */
+
+/* Body */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+/* End */
+
+/* Navbar */
+/* Adding Responsiveness to the navbar */
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    position:fixed;
+    background-color: #8af05b;
+    top: 0px;
+    height: 10vh;
+    width:100%;
+    z-index: 1;
+    box-shadow: 0 1px 1px gray;
+}
+
+.navbar>ul{
+    padding: 0;
+    display: flex;
+    margin-right: 6vw;
+}
+
+.navbar>ul>li{
+    list-style: none;
+    padding: 1.5vh 3vh;
+}
+
+.navbar>ul>li>a{
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
+    font-size: 2em;
+    color: rgb(153, 149, 149);
+    font-weight: bold;
+}
+
+.navbar>ul>li:hover>a{
+    color: #000;
+ }
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: right;
+}
+
+.navbar>ul>li>a:before{
+    content: '';
+    width: 0;
+    background: #000;
+    transition: 0.5s;
+    left: 0;
+    top:-5px;
+    position: absolute;
+    height: 3px;
+}
+
+.navbar>ul>li:hover>a:before{
+    transform: translateX(100%);
+    width: 50%;
+}
+
+.toggle{
+    display: block;
+    position: absolute;
+    background-color: rgba(32, 32, 32, 0.3);
+    right:3.5vw;
+    top:2vh;
+    color: #fff;
+    padding: 0.75vmin;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 4vh;
+}
+
+@media(max-width:760px){
+    .navbar{
+        padding: 0 0;
+    }
+    .navbar>ul{
+        width: 100%;
+        top: -4px;
+        display: none;
+    }
+  
+    .navbar>ul > li > a:hover{
+        background-color: #e91e63;
+        color:#fff;
+    }
+    
+    .navbar>ul.active{
+        display: block;
+    }
+  
+    .navbar>ul>li#navbar>a{
+        display:block;
+        text-align: center;
+        margin: 0;
+        background: rgba(41, 37, 37, 0.95);
+        z-index: 1;
+        color: #fff;
+    }
+  
+    #home{
+      margin-top: 75px;
+    }
+  }
+
+ /* Navbar End*/
+
+/* Particle JS */
+/* Making the background responsive is still a pending work */
+#particles-js{
+    background: url(/images/background.png) ; 
+    background-color: rgb(35, 141, 202);
+    background-size: cover;
+    margin-top:10vh;
+    height:80vh;
+    width: 100vw;
+    border-top: blue 60px;
+    position: relative;    
+}
+/* End particle JS */
+
+
+/* Header inside banner */
+#particle-js-banner{
+    position: relative;
+}
+
+.header{
+    position: absolute;
+    width:80%;  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    padding: 2vmin;
+}
+
+.banner-heading{
+    font-size: 3vmax;
+    font-weight: 1000;
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+}
+
+.banner-mid{
+    font-size: 2vmax;
+    font-weight: bolder;
+    text-align: center;
+    color:#8af05b;
+    text-shadow: 1px 1px 5px black;
+}
+
+.about-section{
+    font-size: 2vmax;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}  
+ 
+@media (max-width: 400px) and (max-height: 300px) {
+    .banner-heading{
+        font-size: 5vmax;
+        font-weight: 1000;
+    }
+    
+    .banner-mid{
+        font-size: 3vmax;
+        font-weight: bolder;
+    }
+    
+    .about-section{
+        font-size: 3vmax;
+        font-weight: 600;
+    }
+} 
+/* End Header text inside banner */
+
+
+
+/* Footer */
+
+
+ #footer{
+    margin: 0;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 2rem 0 2rem;
+    background: #8af05b;
+    border-top: 4px solid black;
+    flex-direction: column;
+    text-align: center;
+ }
+
+#contact>h2{
+    font-family: "Poppins",sans-serif;   
+    text-align: center; 
+    font-weight: 1000;
+    font-size: 3.5rem;
+}
+
+#contact>ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#contact>ul>li{
+    list-style: none;
+}
+
+#contact>ul>li>a{
+    font-size: 2.4rem;
+    transition: transform 0.3s ease-out;
+}
+
+#contact>ul>li>a:hover{
+    font-size: 2.7rem;
+    color: honeydew;
+    transform: translateY(0.5rem);
+}
+
+.end-banner{
+    text-align: center;
+    font-family: sans-serif;
+    width: 100%;
+    background-color:#8af05b;
+    font-size: 2vh;
+    font-weight: 800;
+    margin: 0px;
+    padding: 5px 0;
+    color: black;
+}
+/* End */
