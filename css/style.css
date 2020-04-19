@@ -209,6 +209,53 @@ body{
 } 
 /* End Header text inside banner */
 
+/* Category Section */
+#category-section{
+    margin:0;
+    padding: 10vmax 0;
+    width:100vw; 
+    height: auto;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+#category-section>h2{
+    position: absolute;
+    top:3vmax;
+    font-family: cursive,sans-serif;
+    font-size: 5vmax;
+    color: #8af05b;
+    text-shadow: 1px 1px 2px black;
+}
+
+#category-section>a{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#category-section>a>div{
+    margin:2vmax 0 0 0;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#category-section>a>div>i{
+    font-size: 4vmin;
+    text-align: center;
+} 
+
+@media (max-width:760px){
+    #category-section>a>div{
+        flex-direction: row;
+    }     
+}
+
+
+
+/* End Category Section */
 
 
 /* Footer */
