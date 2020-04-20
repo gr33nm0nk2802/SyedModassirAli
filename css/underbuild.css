@@ -70,23 +70,29 @@ body{
     animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    animation-timing-function: linear;
 }
 
 @keyframes build {
-    0%{}
-
-    33% {transform:rotate(-45deg);
+    0%{transform:rotate(0deg);
+      -ms-transform:rotate(0deg);
+      -webkit-transform:rotate(0deg);}
+    
+    25% {transform:rotate(-45deg);
         -ms-transform:rotate(-45deg);
         -webkit-transform:rotate(-45deg);}
     
-    66%{transform:rotate(0deg);
+    50%{transform:rotate(0deg);
         -ms-transform:rotate(0deg);
         -webkit-transform:rotate(0deg);}            
 
-    100% {transform:rotate(45deg);
+    75% {transform:rotate(45deg);
         -ms-transform:rotate(45deg);
         -webkit-transform:rotate(45deg);}
-        
+
+    100%{transform:rotate(0deg);
+        -ms-transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);}      
 }
 
 .container2 >a{
