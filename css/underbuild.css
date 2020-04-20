@@ -65,6 +65,20 @@ body{
     position: relative;  
     font-size: 10vw;
     margin: 20px 0;
+    animation-name: build;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes build {
+    from {transform:rotate(-45deg);
+        -ms-transform:rotate(-45deg);
+        -webkit-transform:rotate(-45deg);}
+    to {transform:rotate(45deg);
+        -ms-transform:rotate(45deg);
+        -webkit-transform:rotate(45deg);}
 }
 
 .container2 >a{
@@ -73,7 +87,7 @@ body{
     display: block;
     margin: auto ;
     text-align: center;
-    padding: 10px 25px; 
+    padding: 5px 10px; 
     background: #ff0562; 
     color:#fff;
     border-radius: 25px;
@@ -82,3 +96,6 @@ body{
     font-weight: 600;
 }
 
+.container2 >a:hover{
+    box-shadow: 0px 0px 1px 3px #e23d7a,0px 0px 1px 3px #fff;
+}
