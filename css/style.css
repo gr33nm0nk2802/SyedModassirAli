@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 /** Base reset **/
 
 *{
@@ -217,14 +219,17 @@ body{
     height: auto;
     background-color: rgb(240, 240, 240);
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    -ms-flex-align: center;
+    justify-content: space-around;
     position: relative;
 }
 
 #category-section>h2{
     position: absolute;
-    top:3vmax;
-    font-family: cursive,sans-serif;
+    top:4vmax;
+    font-family: 'Lobster', cursive;
     font-size: 5vmax;
     color: #8af05b;
     text-shadow: 1px 1px 2px black;
@@ -232,14 +237,61 @@ body{
 
 #category-section>a{
     text-decoration: none;
-    display: flex;
-    justify-content: space-evenly;
+    font-size: 20px;
+    margin: 10px 5px 10px 5px;
+    height: 125px;
+    width: 270px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 3px gray;
+    background-color: #fff;
 }
 
-#category-section>a>div{
-    margin:2vmax 0 0 0;
-    border-radius: 5px;
-    background-color: #fff;
+#category-section>a:hover{
+    box-shadow: 0 0 4px 6px gray;
+}
+
+.cp,.cp:hover{
+    border-bottom: 5px solid rgb(181, 252, 76);
+    color:rgb(181, 252, 76);
+    width: 100%;
+    height: 100%;
+}
+
+.webd,.webd:hover{
+    border-bottom: 5px solid rgb(243, 174, 105);
+    color:rgb(243, 174, 105);
+    width: 100%;
+    height: 100%;
+}
+
+.network,.network:hover{
+    border-bottom: 5px solid rgb(252, 92, 92);
+    color:rgb(252, 92, 92);
+}
+
+.iot,.iot:hover{
+    border-bottom: 5px solid rgb(255, 128, 223);
+    color:rgb(255, 128, 223);
+}
+
+.security,.security:hover{
+    border-bottom: 5px solid rgb(142, 142, 247);
+    color:rgb(142, 142, 247);
+}
+
+.cp-i,.webd-i,.network-i,.iot-i,.security-i{
+    color: inherit !important;
+    padding-top:15px;
+    padding-left:30px;
+    font-size: 30px;
+}
+
+.cp-p,.webd-p,.network-p,.iot-p,.security-p{
+    color:black;
+    font-family: "Poppins",sans-serif;
+    font-size:inherit ;
+    margin-top: 5px;
+    text-align: center;
 }
 
 #category-section>a>div>i{
@@ -252,15 +304,36 @@ body{
         flex-direction: row;
     }     
 }
-
-
-
 /* End Category Section */
 
+/* Skills Section */
+#skills>h2{
+    font-family: 'Lobster', cursive;
+    font-size: 5vmax;
+    color: #8af05b;
+    text-shadow: 1px 1px 2px black;    
+}
+/* End Skills Section */
+
+/* Projects Section */
+#projects>h2{
+    font-family: 'Lobster', cursive;
+    font-size: 5vmax;
+    color: #8af05b;
+    text-shadow: 1px 1px 2px black;
+}
+/* End Projects Section */
+
+/* Achievements Section */
+#achievements>h2{
+    font-family: 'Lobster', cursive;
+    font-size: 5vmax;
+    color: #8af05b;
+    text-shadow: 1px 1px 2px black;
+}
+/* End Achievements Section */
 
 /* Footer */
-
-
  #footer{
     margin: 0;
     font-weight: 500;
@@ -288,9 +361,11 @@ body{
 
 #contact>ul>li{
     list-style: none;
+    margin: 0 5px;
 }
 
 #contact>ul>li>a{
+    color:#000;
     font-size: 2.4rem;
     transition: transform 0.3s ease-out;
 }
