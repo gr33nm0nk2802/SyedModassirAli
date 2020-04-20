@@ -1,0 +1,84 @@
+/** Base reset **/
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+*,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+html{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+/* End */
+
+body{
+    position: relative;
+    background: linear-gradient(45deg,#8500ff,#5acaff);
+    height: 100vh;
+    color: #fff;
+}
+
+.container1{
+    position: absolute;
+    top:10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #151729d5;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+.container1 > .container2{
+    position: relative;
+    max-width: 600px;
+    max-height: 600px;
+    text-align: center;
+}
+
+.container2>h2{
+    font-size: 5vw;
+    line-height: 1em;
+}
+
+.hammer{
+    position: relative;
+    display: block;
+    margin: auto;
+    height: auto;
+    width: 10vw;
+}
+
+.container2>.hammer>i{
+    position: relative;  
+    font-size: 10vw;
+    margin: 20px 0;
+}
+
+.container2 >a{
+    position: relative;
+    text-decoration: none;
+    display: block;
+    margin: auto ;
+    text-align: center;
+    padding: 10px 25px; 
+    background: #ff0562; 
+    color:#fff;
+    border-radius: 25px;
+    width: 8vw;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
