@@ -73,12 +73,20 @@ body{
 }
 
 @keyframes build {
-    from {transform:rotate(-45deg);
+    0%{}
+
+    33% {transform:rotate(-45deg);
         -ms-transform:rotate(-45deg);
         -webkit-transform:rotate(-45deg);}
-    to {transform:rotate(45deg);
+    
+    66%{transform:rotate(0deg);
+        -ms-transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);}            
+
+    100% {transform:rotate(45deg);
         -ms-transform:rotate(45deg);
         -webkit-transform:rotate(45deg);}
+        
 }
 
 .container2 >a{
