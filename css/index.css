@@ -251,8 +251,8 @@ body{
 }
 
 .cp,.cp:hover{
-    border-bottom: 5px solid rgb(181, 252, 76);
-    color:rgb(181, 252, 76);
+    border-bottom: 5px solid rgb(255, 128, 223);
+    color:rgb(255, 128, 223);
     width: 100%;
     height: 100%;
 }
@@ -267,16 +267,22 @@ body{
 .network,.network:hover{
     border-bottom: 5px solid rgb(252, 92, 92);
     color:rgb(252, 92, 92);
+    width: 100%;
+    height: 100%;
 }
 
 .iot,.iot:hover{
-    border-bottom: 5px solid rgb(255, 128, 223);
-    color:rgb(255, 128, 223);
+    border-bottom: 5px solid rgb(181, 252, 76);
+    color:rgb(181, 252, 76);
+    width: 100%;
+    height: 100%;
 }
 
 .security,.security:hover{
     border-bottom: 5px solid rgb(142, 142, 247);
     color:rgb(142, 142, 247);
+    width: 100%;
+    height: 100%;
 }
 
 .cp-i,.webd-i,.network-i,.iot-i,.security-i{
