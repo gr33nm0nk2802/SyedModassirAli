@@ -1,8 +1,14 @@
+//Preloader
+window.addEventListener("load", function () {
+  const loader = document.querySelector(".loader");
+  loader.className += " hidden"; // class "loader hidden"
+});
+
 // Wow Js
 wow = new WOW(
 {
     boxClass:     'wow',      // default
-    animateClass: 'animated', // default
+    animateClass: 'animated animated2', // default
     offset:       0,          // default
     mobile:       true,       
     live:         true        // default
@@ -15,3 +21,7 @@ $(document).ready(function(){
     $('ul').toggleClass('active')
     })
 })
+
+// Nav
+$('#menu').onePageNav();
+
