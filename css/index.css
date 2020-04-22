@@ -888,6 +888,7 @@ body{
 .btn-show-all {
   font-size: 2rem;
   background: var(--main-gray);
+  color: #f5f5f5;
   transition: background 0.3s ease-out;
 }
 
@@ -907,11 +908,31 @@ body{
 /* End Projects Section */
 
 /* Achievements Section */
+#achievements{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  padding:20px;
+  background: linear-gradient(90deg,rgb(85, 84, 84),rgb(138, 137, 137),rgb(163, 162, 162),rgb(235, 235, 235));
+}
 #achievements>h2{
     font-family: 'Lobster', cursive;
     font-size: 5vmax;
     color: #8af05b;
     text-shadow: 1px 1px 2px black;
+    text-align: center;
+    border-bottom: 0.2rem solid var(--main-white);
+}
+
+.achievements-section{
+  width:80%;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 0 0 1px white;
 }
 /* End Achievements Section */
 
